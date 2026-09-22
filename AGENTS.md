@@ -48,6 +48,8 @@ Changes follow [OpenSpec](https://github.com/Fission-AI/OpenSpec). The workflows
 
 ### Branches
 
+Create every branch from the latest `main`. Run `git switch main` and `git pull` first.
+
 Format: `<type>/<short-description>`
 
 - `type` is one of the commit types below.
