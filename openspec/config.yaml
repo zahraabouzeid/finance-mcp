@@ -1,1 +1,27 @@
 schema: spec-driven
+
+context: |
+  Project
+  finance-mcp is an open-source MCP server written in Rust. It gives AI assistants
+  access to personal finance data from multiple providers.
+  Goals in order: secure, maintainable, easy to extend.
+
+  Architecture
+  Hexagonal architecture (ports and adapters) with lightweight domain-driven design.
+  Dependencies point inward only. The domain has no knowledge of providers or protocols.
+  Each adapter maps external data to domain types. External types never leave an adapter.
+  Adding a provider means adding an adapter, without changing the domain.
+
+  Security
+  Read-only: no transfers, trades or other write operations.
+  Credentials never pass through the AI assistant.
+  All external data is untrusted.
+  Never log secrets or personal data.
+
+  Maintainer
+  The maintainer is learning Rust. Designs explain the Rust concepts involved.
+
+rules:
+  proposal:
+    - Include a Security impact section, even if the impact is none.
+    - Include an Out of scope section listing what this change deliberately does not cover.
