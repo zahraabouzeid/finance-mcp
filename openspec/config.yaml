@@ -25,3 +25,6 @@ rules:
   proposal:
     - Include a Security impact section, even if the impact is none.
     - Include an Out of scope section listing what this change deliberately does not cover.
+  tasks:
+    - Write the tests for a behavior before its implementation, where possible.
+    - Every task that adds behavior includes its tests.

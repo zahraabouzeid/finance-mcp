@@ -1,0 +1,17 @@
+[graph]
+all-features = true
+
+[advisories]
+ignore = []
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+deny = [
+    { crate = "openssl", reason = "TLS must use rustls" },
+    { crate = "openssl-sys", reason = "TLS must use rustls" },
+]
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
