@@ -71,7 +71,7 @@ Format follows [Conventional Commits 1.0](https://www.conventionalcommits.org/en
 ```
 
 - `type`: `feat`, `fix`, `refactor`, `perf`, `test`, `docs`, `build`, `ci`, `chore`.
-- `scope`: the crate or area changed. Optional when the change spans the whole project.
+- `scope`: the crate name, exactly as in its `Cargo.toml`. Omit it when the change spans several crates.
 - `subject`: imperative mood, lowercase, no period, at most 72 characters.
 - `body`: optional. Explains why, not what. Wrap at 72 characters.
 - `footer`: `BREAKING CHANGE: <description>` for breaking changes, also marked with `!` after the scope. References such as `Refs: #12`.
