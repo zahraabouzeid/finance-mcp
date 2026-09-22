@@ -18,8 +18,8 @@ context: |
   All external data is untrusted.
   Never log secrets or personal data.
 
-  Maintainer
-  The maintainer is learning Rust. Designs explain the Rust concepts involved.
+  Contributors
+  Designs explain the Rust concepts involved, for contributors new to Rust.
 
 rules:
   proposal:
