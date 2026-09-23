@@ -30,5 +30,5 @@
 ## 6. Verification
 
 - [x] 6.1 Run `cargo fmt --all --check`, `cargo clippy --workspace --all-targets --all-features --locked -- -D warnings` and `cargo test --workspace --all-features --locked`, and verify all pass
-- [ ] 6.2 Start the server with `cargo run`, connect with an MCP client, call `server_status`, then press Ctrl+C, and verify the result and a clean exit with code 0
+- [x] 6.2 Start the server with `cargo run`, connect with an MCP client, call `server_status`, then press Ctrl+C, and verify the result and a clean exit with code 0
 - [x] 6.3 Run `openspec validate add-walking-skeleton --strict` and verify it passes
